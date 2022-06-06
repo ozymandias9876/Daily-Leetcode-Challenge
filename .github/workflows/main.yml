@@ -2,7 +2,7 @@ name: Python Script Workflow
 
 on:
   schedule:
-  - cron: "*/* * * * *"
+  - cron: "* * * * *"
 
 jobs:
   build:
