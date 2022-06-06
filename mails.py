@@ -18,8 +18,8 @@ data = {
         }
       ],
       "Subject": "Greetings from Himanshu.",
-      "TextPart": "Love You Always Baba",
-      "HTMLPart": "<h1>Love You,Always </h1>""<h3>Dear Bhawna I, welcome you to <a href='https://www.linkedin.com/in/himanshu3wari/'>Himanshu</a>!</h3><br />Wish you a happy day!"
+      "TextPart": "Daily Leetcode Challenge",
+      "HTMLPart": "<h1>Daily Leetcode Challenge</h1>""<h3>Dear User,welcome, i encourage  you to join me <a href='https://www.linkedin.com/in/himanshu3wari/'>Himanshu</a>!</h3><br />Wish you a happy day!"
                     "<p>Here's your daily leetcode challenge <a href={}>question</a>".format(today_problem),
       "CustomID": "AppGettingStartedTest"
     }
