@@ -11,19 +11,32 @@ data = {
         "Email": "himanshutiwarihouse@gmail.com",
         "Name": "Himanshu"
       },
-      "To": [
+      
+         
+      "To":[
         {
-          "Email": "bhawna2907kumari@gmail.com",
-          "Name": "Bhawna Kumari"
-        }
+          "Email": "himanshutiwarihouse@gmail.com",
+          "Name": "Himanshu"
+        },
+        {"Email": "bhawna2907kumari@gmail.com",
+          "Name": "Bhawna"
+        },
+        {"Email": "tooamitkr99@gmail.com",
+         "Name": "Amit"
+        },
+        {"Email": "deepeshkhatri018@gmail.com",
+         "Name": "Deepesh"}
+      
       ],
       "Subject": "Greetings from Himanshu.",
-      "TextPart": "Daily Leetcode Challenge",
-      "HTMLPart": "<h1>Daily Leetcode Challenge</h1>""<h3>Dear User,welcome, i encourage  you to join me <a href='https://www.linkedin.com/in/himanshu3wari/'>Himanshu</a>!</h3><br />Wish you a happy day!"
+      "TextPart": "May Leetcoding Never Stops",
+      "HTMLPart": "<h3>Dear User I, welcome you to <a href='https://www.linkedin.com/in/himanshu3wari/'>Himanshu</a>!</h3><br />Wish you a happy day!"
                     "<p>Here's your daily leetcode challenge <a href={}>question</a>".format(today_problem),
       "CustomID": "AppGettingStartedTest"
-    }
-  ]
+    
+  
+}
+]
 }
 result = mailjet.send.create(data=data)
 print(result.status_code)
