@@ -1,0 +1,28 @@
+name: Python Script Workflow
+
+on:
+  schedule:
+  - cron: "* * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2 # Checkout the repository content to github runner.
+
+      - name: Setup Python Version
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 # Install the python version needed
+
+      - name: Install Python dependencies
+        
+        run: python -m pip install --upgrade pip requests
+        
+      - name: Install requirements
+        run:  pip install -r requirements.txt
+
+      - name: Execute Python script # Run the app.py
+        run: python mails.py
