@@ -1,25 +1,26 @@
-name: py
-    
-    on:
-      schedule:
-        - cron: "08 30 * * *" #runs at 00:00 UTC everyday
-    
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-    
-        steps:
-          - name: checkout repo content
-            uses: actions/checkout@v2 # checkout the repository content to github runner.
-          - name: setup python
-            uses: actions/setup-python@v2
-            with:
-              python-version: 3.8 #install the python needed
-          - name: execute py script # run the run.py to get the latest data
-            run: |
-              pip install beautifulsoup4
-              python ./mails.py
-            env:
-              key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
-          - name: export index
-            .... # use crosponding script or actions to help export.
+name: Python Script Workflow
+
+on:
+  schedule:
+  - cron: "*/30 2 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2 # Checkout the repository content to github runner.
+
+      - name: Setup Python Version
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 # Install the python version needed
+
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v2
+        with:
+          path: "requirements.txt"
+
+      - name: Execute Python script # Run the app.py
+        run: python mails.py
