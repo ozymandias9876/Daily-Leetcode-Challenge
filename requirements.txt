@@ -1,0 +1,2 @@
+mailjet_rest
+beautifulsoup4
