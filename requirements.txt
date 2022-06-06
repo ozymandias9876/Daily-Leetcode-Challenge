@@ -1,2 +1,3 @@
 mailjet_rest
 beautifulsoup4
+lxml
