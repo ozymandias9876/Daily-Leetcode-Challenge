@@ -33,6 +33,12 @@ today_problem=problem+z[-1]
 """
 today_problem=problem+x[0]
 today_problem=today_problem[:-2]
+question_name=""
+c=today_problem.find("problems")
+question_name=question_name+today_problem[c+9:-1]
+vs=question_name.split('-')
+question_name=' '.join(vs)
+print(question_name)
 print(today_problem[:-2])
 	
 
