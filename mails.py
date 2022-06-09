@@ -31,7 +31,7 @@ data = {
       "Subject": "Greetings from Himanshu.",
       "TextPart": "May Leetcoding Never Stops",
       "HTMLPart": "<h3>Dear User I, welcome you to <a href='https://www.linkedin.com/in/himanshu3wari/'>Himanshu</a>!</h3><br />Wish you a happy day!"
-                    "<p>Here's your daily leetcode challenge <a href={}>question</a>".format(today_problem),
+                    "<p>Here's your daily leetcode challenge <a href={}><em>{}</em></a>".format(today_problem,question_problem),
       "CustomID": "AppGettingStartedTest"
     
   
