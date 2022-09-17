@@ -24,8 +24,8 @@ data = {
         {"Email": "tooamitkr99@gmail.com",
          "Name": "Amit"
         },
-        {"Email": "deepeshkhatri018@gmail.com",
-         "Name": "Deepesh"}
+        {"Email": "livelikevismay@gmail.com",
+         "Name": "Vismay"}
       
       ],
       "Subject": "Greetings from Himanshu.",
