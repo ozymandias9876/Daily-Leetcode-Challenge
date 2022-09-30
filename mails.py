@@ -18,14 +18,10 @@ data = {
           "Email": "himanshutiwarihouse@gmail.com",
           "Name": "Himanshu"
         },
-        {"Email": "bhawna2907kumari@gmail.com",
-          "Name": "Bhawna"
-        },
-        {"Email": "tooamitkr99@gmail.com",
-         "Name": "Amit"
-        },
-        {"Email": "livelikevismay@gmail.com",
-         "Name": "Vismay"}
+        {
+          "Email": "mishranaman2222@gmail.com",
+          "Name": "Naman"
+        }
       
       ],
       "Subject": "Greetings from Himanshu.",
